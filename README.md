@@ -1,9 +1,18 @@
 # Getting Started
 
-* Download the repository and rename it to `my-app`
 * Make sure `node` is installed. If not, install it [here](https://nodejs.org/en/)
 * Make sure `jspm` is installed. If not, run `npm install jspm -g`
-* Insert appropriate database details in `my-app/routes/app.js`
+* Download the repository and rename it to `my-app`
+* Insert database details in `my-app/routes/app.js`
+```javascript
+    const cn = {
+        host: '',
+        port: 5432,
+        database: '',
+        user: '',
+        password: ''
+    };
+```
 * To install the dependencies
     * `cd my-app`
     * `npm install` 

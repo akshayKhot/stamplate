@@ -4,10 +4,10 @@ var router = express.Router()
 var pgp = require('pg-promise')()
 
 const cn = {
-    host: 'localhost',
+    host: '',
     port: 5432,
-    database: 'progress',
-    user: 'akshaykhot',
+    database: '',
+    user: '',
     password: ''
 };
 var db = pgp(cn)
