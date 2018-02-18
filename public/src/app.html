@@ -1,0 +1,14 @@
+<template>
+  
+  <div class="wrap">
+        <div class="links">
+            <a href.bind="row.href" repeat.for="row of router.navigation">
+              ${row.title}
+            </a>
+        </div>
+
+    <div class="page-host">
+        <router-view></router-view>
+    </div>
+  </div>
+</template>
