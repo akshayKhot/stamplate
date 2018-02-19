@@ -3,7 +3,7 @@
 * Make sure `node` is installed. If not, install it [here](https://nodejs.org/en/)
 * Make sure `jspm` is installed. If not, run `npm install jspm -g`
 * Download the repository and rename it to `my-app`
-* Insert database details in `my-app/routes/app.js`
+* Insert database details in `my-app/db.js`
 ```javascript
     const cn = {
         host: '',
