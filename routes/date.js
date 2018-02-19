@@ -1,16 +1,7 @@
 var express = require('express')
 var moment = require('moment')
 var router = express.Router()
-var pgp = require('pg-promise')()
-
-const cn = {
-    host: '',
-    port: 5432,
-    database: '',
-    user: '',
-    password: ''
-};
-var db = pgp(cn)
+var db = require('../db')
 
 router.get('/:date', (req, res) => {
     var date = moment(req.params.date).format("YYYY-MM-DD")
